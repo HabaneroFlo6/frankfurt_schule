@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/frankfurt.css">
+    <title>Frankfurt</title>
+
+    <script>
+        function zeigeUhrzeit() {
+          var jetzt = new Date();
+          var stunden = jetzt.getHours();
+          var minuten = jetzt.getMinutes();
+          
+          // Füge eine führende Null hinzu, wenn die Minutenzahl einstellig ist
+          if (minuten < 10) {
+            minuten = "0" + minuten;
+          }
+          
+          // Zeige die Uhrzeit im Format HH:MM an
+          document.getElementById('uhrzeit').innerHTML = stunden + ":" + minuten;
+        }
+    
+        // Aktualisiere die Uhrzeit alle Sekunde
+        setInterval(zeigeUhrzeit, 1000);
+      </script>
+
+</head>
+<body>
+
+    <!-- Blue Menu at the Top -->
+    <!-- #region -->
+    <nav class="nav_nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i>
+                <img class="menu_img" src="img/menu.png" alt="">
+            </i>
+        </label>
+        <label class="logo">Frankfurt</label>
+
+        <ul id="navul" class="nav_ul">
+            <li class="nav_li"><a class= "nav_a_active" href="frankfurt.html">Home</a></li>
+            <li class="nav_li"><a class= "nav_a" href="geschichte.html">Geschichte</a></li>
+            <li class="nav_li"><a class= "nav_a" href="sehenswuerdigkeiten.html">Sehenswürdigkeiten</a></li>
+            <li class="nav_li"><a class= "nav_a" href="standort.html">Standort</a></li>
+            <li class="nav_li"><a class= "nav_a" href="skyline.html">Skyline</a></li>
+        </ul>
+    </nav>
+
+    <!-- #endregion -->
+
+
+
+
+<div id="section_two">
+
+    <!-- Wetter Anzeige oben und Uhrzeit -->
+    <!-- #region -->
+
+    
+    <div class="home_weather_div"> 
+        <a style="z-index: -1;" class="weatherwidget-io" href="https://forecast7.com/de/50d118d68/frankfurt/" data-label_1="Frankfurt" data-label_2="Wetter" data-font="Helvetica" data-theme="original" >Frankfurt Wetter</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+
+        
+        <div class="uhrzeit">
+            <h3><b>Uhrzeit</b></h3>
+            <span style="margin-left: 20px; text-decoration-line: underline;">In Frankfurt ist es Aktuell:</span>
+            <div style="display: inline-block;">
+                <span style="display: inline;" id="uhrzeit">NICHT ERREICHBAR</span>
+            </div>
+            <span>Uhr</span>
+        </div>
+
+    </div>
+    
+<!-- #endregion -->
+
+
+
+
+
+
+    <h1 class="header1">Allgemeines über Frankfurt</h1>
+
+    <div>  
+        <ul class="frankfurt_start">    
+            Frankfurt am Main ist mit 773.068 Einwohnern 
+            (stand: 31.12.2022) die bevölkerungsreichste 
+            Stadt des Landes Hessen und die fünftgrößte 
+            Deutschlands. Sie ist kreisfrei und bildet 
+            das Zentrum des Ballungsraums Frankfurt mit 
+            mehr als 2,3 Millionen Einwohnern. In der 
+            Metropolregion Frankfurt/Rhein-Main 
+            (Rhein-Main-Gebiet) leben etwa 5,8 Millionen 
+            Menschen.
+        </ul>
+
+
+        <!-- Images and Text to them -->
+        <!-- #region -->
+        <div class="frankfurt_start_banken_und_messen_div_container_all">
+        <div class="frankfurt_start_banken_und_messen_div">
+            
+            <div class="container_frankfurt_start_banken_und_messen_img_one">
+                <img class="frankfurt_start_banken_und_messen_img_one" src="img/frankfurt_bankenviertel.jpg" alt="">
+                <div class="text_container_frankfurt_start_banken_und_messen_img_div_one">
+                    <p class="text_container_frankfurt_start_banken_und_messen_img_one">Frankfurt</p>
+                </div>
+            </div>
+
+            <div class="container_frankfurt_start_banken_und_messen_img_two">
+                <img class="frankfurt_start_banken_und_messen_img_two" src="img/frankfurt_europaeische_zentralbank.jpg" alt="">
+                <div class="text_container_frankfurt_start_banken_und_messen_img_div_two">
+                    <p class="text_container_frankfurt_start_banken_und_messen_img_two">Europäische Zentralbank</p>
+                </div>
+            </div>
+
+            <div class="container_frankfurt_start_banken_und_messen_img_three">
+                <img class="frankfurt_start_banken_und_messen_img_three" src="img/frankfurt_wertpapierboerse.jpg" alt="pl">
+                <div class="text_container_frankfurt_start_banken_und_messen_img_div_three">
+                    <p class="text_container_frankfurt_start_banken_und_messen_img_three">Wertpapierbörse</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="frankfurt_start_banken_und_messen_text_div">
+            <ul class="frankfurt_start_banken_und_messen_ul">
+                Frankfurt am Main ist ein internationaler 
+                Finanzplatz, bedeutendes Industrie-, 
+                Dienstleistungs- und Messezentrum und zählt 
+                zu den ökonomischen Weltstädten. Frankfurt 
+                am Main ist Sitz der Europäischen Zentralbank, 
+                der Deutschen Bundesbank, der Frankfurter 
+                Wertpapierbörse, zahlreicher Finanzinstitute 
+                (darunter Deutsche Bank, 
+                Commerzbank, DZ Bank, KfW), der 
+                Aufsichtsbehörden BaFin und EIOPA und der 
+                Messe Frankfurt. Die Frankfurter Buchmesse 
+                und die Musikmesse gelten als Weltleitmessen 
+                ihrer Sparten, die Internationale 
+                Automobil-Ausstellung fand hier bis 2019 
+                statt. Die Stadt ist zudem Sitz vieler nationaler 
+                Sportverbände, darunter der Deutsche Olympische 
+                Sportbund und der Deutsche Fußball-Bund.
+            </ul>
+        </div>
+        </div>
+        
+        <!-- #endregion -->
+
+        
+    </div>
+
+</div>
+
+
+<!-- Allgemeines 2. Abschnitt mit Bildern -->
+<!-- #region -->
+    <div>
+        <ul class="frankfurt_sehenswuerdigkeiten_absatz_text">
+            Frankfurt ist nicht nur für seine Sehenswürdigkeiten 
+            bekannt, sondern auch für seine reiche kulturelle 
+            Szene, erstklassige Restaurants, lebendige Märkte und 
+            pulsierende Veranstaltungen. Die Stadt beheimatet eine 
+            Vielzahl von Theaterhäusern, Konzerthallen und 
+            Veranstaltungsorten, die ein breites Spektrum an künstlerischen 
+            Darbietungen bieten, von klassischer Musik bis hin zu modernen 
+            Inszenierungen.
+        </ul>
+
+        <ul class="frankfurt_sehenswuerdigkeiten_absatz_text">
+            Des Weiteren locken die verschiedenen Stadtviertel 
+            mit ihrem eigenen Charme: das trendige Bahnhofsviertel 
+            mit seinen vielfältigen kulinarischen Angeboten, das 
+            alternative und kreative Viertel Bornheim, das schicke 
+            Westend mit seiner eleganten Architektur und vieles 
+            mehr. Hier pulsiert das Leben in verschiedenen 
+            Facetten, und Besucher haben die Möglichkeit, das 
+            authentische Frankfurt jenseits der touristischen 
+            Hotspots zu erleben.
+        </ul>
+
+        <ul class="frankfurt_sehenswuerdigkeiten_absatz_text">
+            Die lokale Küche Frankfurts ist ebenfalls 
+            bemerkenswert, vor allem die Gerichte wie "Grüne Soße" 
+            und "Ebbelwoi" (Apfelwein) gehören zu den kulinarischen 
+            Spezialitäten, die man unbedingt probieren sollte. Die 
+            Märkte der Stadt, wie der Kleinmarkthalle und der 
+            Flohmarkt am Mainufer, bieten ein buntes Treiben und 
+            die Möglichkeit, lokale Produkte und einzigartige 
+            Souvenirs zu entdecken.
+        </ul>
+
+
+        <!-- Bilder -->
+        <div class="frankfurt_bilder_div">
+
+            <div class="frankfurt_abschluss_div_img_ebbelwoi_ex" style="margin-right: 10px;">
+                <img class="frankfurt_abschluss_img_ebbelwoi_ex" src="img/ebbelwoi.jpg" alt="">
+                <div class="frankfurt_abschluss_img_ebbelwoi_ex_text_div">
+                    <p class="frankfurt_abschluss_img_ebbelwoi_ex_text_thetext">Ebbelwoi (Apfelwein)</p>
+                </div>
+            </div>
+
+            <div class="frankfurt_abschluss_div_img_ebbelwoi_ex" style="margin-right: 10px;">
+                <img class="frankfurt_abschluss_img_ebbelwoi_ex" src="img/ebbelwoi-express.jpg" alt="">
+                <div class="frankfurt_abschluss_img_ebbelwoi_ex_text_div">
+                    <p class="frankfurt_abschluss_img_ebbelwoi_ex_text_thetext">Ebbelwoi-Express</p>
+                </div>
+            </div>
+
+            <div class="frankfurt_abschluss_div_img_bembel" style="margin-right: 10px;">
+                <img class="frankfurt_abschluss_img_bembel" src="img/bembel.jpg" alt="">
+                <div class="frankfurt_abschluss_img_bembel_text_div">
+                    <p class="frankfurt_abschluss_img_bembel_text_thetext">Bembel</p>
+                </div>
+            </div>
+
+            <div class="frankfurt_abschluss_div_img_geripptes" style="margin-right: 10px;">
+                <img class="frankfurt_abschluss_img_geripptes" src="img/geripptes.jpg" alt="">
+                <div class="frankfurt_abschluss_img_geripptes_text_div">
+                    <p class="frankfurt_abschluss_img_geripptes_text_thetext">Geripptes</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <ul class="frankfurt_sehenswuerdigkeiten_absatz_text" style="margin-top: 48px;">
+            Zudem finden das ganze Jahr über verschiedene 
+            Veranstaltungen und Festivals statt, die das kulturelle 
+            Leben der Stadt bereichern. Von Weihnachtsmärkten im 
+            Winter bis hin zu Sommerfestivals und Konzertreihen 
+            lockt Frankfurt mit einem abwechslungsreichen 
+            Veranstaltungskalender, der für jeden Geschmack 
+            etwas bereithält.
+        </ul>
+
+        <ul class="frankfurt_sehenswuerdigkeiten_absatz_text">
+            Diese Vielfalt an kulturellen Angeboten, kulinarischen 
+            Genüssen und lebendigen Veranstaltungen macht 
+            Frankfurt zu einem Ort, der nicht nur durch seine 
+            Sehenswürdigkeiten, sondern auch durch sein pulsierendes 
+            und vielseitiges Stadtleben besticht.
+        </ul>
+
+
+
+        <h1 class="header1">Frankfurt kurz zusammengefasst</h1>
+
+        <ul class="frankfurt_sehenswuerdigkeiten_absatz_text" style="margin-top: 48px; margin-bottom: 40px;">
+            Frankfurt am Main ist eine Stadt, die durch ihre 
+            Vielfalt und Dynamik besticht. Von ihrer historischen 
+            Bedeutung bis hin zu ihrer modernen Ausstrahlung 
+            als internationales Finanz- und Handelszentrum bietet 
+            die Mainmetropole ein facettenreiches Erlebnis für 
+            Besucher und Einheimische gleichermaßen. Die Kombination 
+            aus kultureller Vielfalt, beeindruckender 
+            Architektur, wirtschaftlicher Stärke und einem reichen 
+            künstlerischen Erbe macht Frankfurt zu einem Ort, der 
+            inspiriert, fasziniert und Menschen aus aller Welt 
+            anzieht. Ganz gleich, ob man die historischen 
+            Sehenswürdigkeiten erkundet, die kreative Szene erlebt 
+            oder in das geschäftige Stadtleben 
+            eintaucht – Frankfurt hinterlässt einen nachhaltigen 
+            Eindruck als lebendige Metropole, die Tradition und 
+            Moderne auf faszinierende Weise verbindet.
+        </ul>
+        
+    </div>
+
+<!-- #endregion -->
+
+    
+</body>
+</html>
