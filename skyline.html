@@ -32,16 +32,274 @@
 
 
 
-
-<div id="section_two">
     
-    <div class="frankfurt_start">  
-        <ul>    
-            Skyline
-        </ul>
+    
+    <div class="background_image_skyline">
+
+        <div class="all_infos">
+
+
+            <input type="checkbox" id="check_fold">
+            <label for="check_fold" class="checkbtn_fold" id="checkbtn_fold_id">
+                <img class="fold_out_img" src="img/menu_2.png" alt="">
+            </label>
+
+
+    
+            <div class="text_image_div" id="text_image_div_id">
+    
+    
+                <ul class="text_skyline">
+                    Die Skyline von Frankfurt am Main ist 
+                    ein beeindruckendes architektonisches 
+                    Wahrzeichen und gilt als eine der 
+                    markantesten Stadtsilhouetten Europas. Was 
+                    sie besonders macht, ist ihre Dichte an 
+                    Wolkenkratzern und Hochhäusern, die ein 
+                    eindrucksvolles Zusammenspiel aus moderner 
+                    Architektur und urbanem Flair bieten. Die 
+                    Skyline wird geprägt von markanten Gebäuden 
+                    wie dem Commerzbank Tower, dem Main 
+                    Tower, dem Messeturm und anderen imposanten 
+                    Hochhäusern, die das Bild der Stadt dominieren 
+                    und Frankfurt als eines der führenden Finanzzentren 
+                    Europas repräsentieren. Diese atemberaubende 
+                    Skyline, gelegen entlang des Mainufers, strahlt 
+                    Dynamik und wirtschaftliche Stärke aus und zieht 
+                    Besucher aus aller Welt an, die das eindrucksvolle 
+                    Panorama bewundern möchten.
+                </ul>
+            </div>
+        </div>
     </div>
 
-</div>
+
+
+    <!-- CSS formatieren ausfahrbaren Text -->
+    <!-- #region -->
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .checkbtn_fold{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin: auto;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check_fold{
+            display: none;
+        }
+
+        .fold_out_img{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            color: black;
+
+            height: 40px;
+            margin: auto;
+
+        }
+
+
+        
+        .all_infos{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            flex-direction: column;
+        }
+
+
+        .text_skyline{
+            padding-bottom: 10px;
+            color: white;
+            /*background-color: rgba(92, 92, 92, 0.712);*/
+            font-size: 22px;
+            line-height: 28px;
+
+            margin-top: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .text_image_div{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            background-color: rgba(92, 92, 92, 0.712);
+        }
+
+
+        .background_image_skyline{
+            background-image: url(img/frankfurt_skyline_2.jpg);
+            /*margin-left: -300px;*/
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        /*@media screen and (max-width: 861px){
+            .fold_out_img{
+                display: none;
+            }
+
+            .checkbtn_fold{
+                display: none;
+            }
+        }*/
+        @media screen and (max-width: 860px){
+            .background_image_skyline{
+                background-image: url(img/frankfurt_skyline_2.jpg);
+                margin-left: -350px;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                height: 100vh;
+
+                display: flex;
+                justify-content: end;
+                align-items: end;
+
+            }
+
+
+
+            .text_image_div{
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                background-color: rgba(92, 92, 92, 0.712);
+
+                bottom: -100%;
+                transition: all .5s;
+
+
+                text-align: center;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                position: fixed;
+            }
+
+            .fold_out_img{
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                color: black;
+
+                height: 40px;
+                margin: auto;
+
+                transition: all .5s;
+            }
+
+            .checkbtn_fold, .checkbtn_fold2{
+                font-size: 30px;
+                color: white;
+                /*float: right;*/
+                line-height: 80px;
+                /*margin: auto;*/
+                cursor: pointer;
+                display: block;
+
+
+                margin-right: 50vw;
+                margin-bottom: 0vh;
+
+                transition: all .5s;
+            }
+
+            .all_infos{
+                display: flex;
+                content: end;
+                align-items: end;
+                flex-direction: column;
+
+
+                transition: all .5s;
+
+                text-align: center;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                position: fixed;
+            }
+
+            #check_fold:checked ~ .text_image_div{
+                bottom: 0;
+                margin-left: 0;
+            }
+
+            #check_fold:checked ~ .text_skyline{
+                bottom: 0;
+                color: white;
+                /*background-color: rgba(92, 92, 92, 0.712);*/
+                font-size: 22px;
+                line-height: 28px;
+
+                margin-top: 18px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            #check_fold:checked ~ .checkbtn_fold{
+                bottom: 0;
+                margin-left: 0;
+                margin-bottom: calc(var(--container-height));
+                /*margin-bottom: 500px;*/
+                transform: scaleY(-1);
+            }
+
+
+
+        }
+        .text_skyline::-webkit-scrollbar{
+            display: none;
+        }
+
+        :root{
+            --container-height: 0;
+        }
+
+    </style>
+
+    <!-- #endregion -->
+
+
+    <div id="widthDisplay" style="display: flex; justify-content: center; align-items: center;"></div>
+    <script>
+        const container = document.getElementById('text_image_div_id');
+        const containerHeight = container.clientHeight;
+        document.documentElement.style.setProperty('--container-height', `${containerHeight}px`)
+
+
+
+        function handleResize(){
+            const widthDisplay = 0;
+            widthDisplay.textContent = `Aktuelle Breite: ${window.innerWidth}px`;
+            
+            const container = document.getElementById('text_image_div_id');
+            const containerHeight = container.clientHeight;
+        document.documentElement.style.setProperty('--container-height', `${containerHeight}px`)
+
+            const element = document.getElementById('checkbtn_fold_id');
+            element.style.marginbottom = `${containerHeight}px`;
+        }
+
+        window.addEventListener('resize', handleResize);
+    </script>
     
 </body>
 </html>
