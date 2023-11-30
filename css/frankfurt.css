@@ -73,10 +73,10 @@ a.nav_a_active,a.nav_a:hover{
 #check{
     display: none;
 }
-@media (max-width: 966px){
+@media (max-width: 1000px){
     
 }
-@media (max-width: 965px){
+@media (max-width: 999px){
     .checkbtn{
         display: block;
     }
@@ -201,6 +201,25 @@ ul.nav_ul::-webkit-scrollbar{
     justify-content: space-around;
     align-items: center;
 }
+@media screen and (max-width: 725px) {
+
+    .frankfurt_start_banken_und_messen_div_container_all{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .frankfurt_start_banken_und_messen_div{
+        margin: 5px;
+        flex: 0 1 75%;
+    }
+
+    .frankfurt_start_banken_und_messen_text_div{
+        transform: translateY(-200px);
+    }
+}
+
 
 .frankfurt_start_banken_und_messen_div{
     margin: 120px auto;
@@ -454,7 +473,12 @@ ul.nav_ul::-webkit-scrollbar{
 
 
 
-/* Youtube Video formatting on Standort page */
+
+
+
+
+
+/* Youtube Video formatting on Sehenswuerdigkeiten page */
 /* #region */
 
 .roemer_frankfurt_div{
@@ -476,7 +500,7 @@ ul.nav_ul::-webkit-scrollbar{
 
 
 .roemer_frankfurt_div_div{
-    margin-top: 120px;
+    margin-top: 40px;
     margin-bottom: 20px;
     
     width: 90%;
@@ -485,3 +509,501 @@ ul.nav_ul::-webkit-scrollbar{
 }
 
 /* #endregion */
+
+
+/* Absaetze formatieren auf Sehenswuerdigkeiten Seite */
+.frankfurt_sehenswuerdigkeiten_absatz_text{
+    font-size: 22px;
+    line-height: 28px;
+
+    margin-top: 18px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+
+
+/* Sehenswuerdigkeiten Abschluss - Alignment and Text formatting */
+/* #region */
+.frankfurt_abschluss_div_div{
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width: 830px){
+
+    .frankfurt_abschluss_div_div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .frankfurt_abschluss_img_div{
+        margin: 5px;
+        flex: 0 1 60%;
+    }
+
+    .frankfurt_abschluss_text_div{
+        transform: translateY(-200px);
+    }
+}
+
+
+
+.frankfurt_abschluss_img_div{
+    margin: 120px auto;
+
+    margin-right: 100px;
+}
+
+
+.frankfurt_abschluss_text_div{
+   margin: 120px auto;
+
+}
+.frankfurt_abschluss_absatz_text{
+    font-size: 22px;
+    line-height: 28px;
+
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* #endregion */
+
+
+/* Sehenswuerdigkeiten seite Bild 1 */
+/* #region */ 
+
+.frankfurt_abschluss_img_one{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    height: 220px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_one{
+    width: 291.33px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_one_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_one_text_div{
+    width: 291.33px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_one_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+
+
+/* Sehenswuerdigkeiten seite Bild 2 */
+/* #region */ 
+
+.frankfurt_abschluss_img_two{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    height: 216.5px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_two{
+    width: 291.95px;
+    height: 216.5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_two_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_two_text_div{
+    width: 291.95px;
+    height: 216.5px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_two_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+
+/* Sehenswuerdigkeiten seite Bild 3 */
+/* #region */ 
+
+.frankfurt_abschluss_img_three{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    height: 250px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_three{
+    width: 174.13px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_three_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_three_text_div{
+    width: 174.13px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_three_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+
+/* Sehenswuerdigkeiten seite Bild 4 */
+/* #region */ 
+
+.frankfurt_abschluss_img_four{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    /*height: 195.5px;*/
+    width: 290.95px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_four{
+    width: 290.95px;
+    height: 195.91px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_four_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_four_text_div{
+    width: 290.95px;
+    height: 195.91px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_four_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+.frankfurt_abschluss_buttons_div{
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.frankfurt_abschluss_buttons{
+    background-color: #0082e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* Frankfurt - Alignment of Images */
+
+/* Frankfurt seite Bild ebbelwoi und ebbelwoi-express */
+/* #region */ 
+
+.frankfurt_abschluss_img_ebbelwoi_ex{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    height: 220px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_ebbelwoi_ex{
+    width: 291.33px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_ebbelwoi_ex_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_ebbelwoi_ex_text_div{
+    width: 291.33px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_ebbelwoi_ex_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+
+
+
+/* Frankfurt seite Bild bembel */
+/* #region */ 
+
+.frankfurt_abschluss_img_bembel{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    height: 220px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_bembel{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_bembel_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_bembel_text_div{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_bembel_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+
+
+
+/* Frankfurt seite Bild geripptes */
+/* #region */ 
+
+.frankfurt_abschluss_img_geripptes{
+    float: left;
+    border: 3px solid black;
+    border-radius: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    max-width: auto;
+    height: 220px;
+
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.frankfurt_abschluss_div_img_geripptes{
+    width: 161.14px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.frankfurt_abschluss_img_geripptes_text_thetext{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frankfurt_abschluss_img_geripptes_text_div{
+    width: 161.14px;
+    height: 220px;
+    position: relative;
+    margin-bottom: 20px;
+    left: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: 0.6s;
+}
+.frankfurt_abschluss_img_geripptes_text_div:hover{
+    opacity: 1;
+}
+
+/* #endregion */
+
+
+/* Die Bilder von oben sind in diesem uebergestellten Div*/
+.frankfurt_bilder_div{
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width: 1115px) {
+
+    .frankfurt_bilder_div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
